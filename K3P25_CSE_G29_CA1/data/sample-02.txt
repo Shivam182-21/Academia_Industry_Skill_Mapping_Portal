@@ -1,0 +1,1 @@
+Full Stack Software Engineer Job Description: Seeking software engineers with strong proficiency in Python, FastAPI, React frontend development, PostgreSQL relational database management, Docker containerization, and Git collaborative workflows.
