@@ -10,7 +10,7 @@
     body { font-family: 'Plus Jakarta Sans', sans-serif; background: #0B1120; color: #F1F5F9; }
     .slide { display: none; min-height: 100vh; }
     .slide.active { display: flex; }
-    .glass-card { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
+    .glass-card { background: rgba(30, 41, 59, 0.75); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
   </style>
 </head>
 <body class="overflow-hidden flex flex-col justify-between">
@@ -23,7 +23,7 @@
       </div>
       <div>
         <h1 class="text-sm font-bold tracking-tight text-white">Academia–Industry Skill Mapping Portal</h1>
-        <p class="text-[11px] text-sky-400 font-mono">SIH 2026 · Problem Statement SIH26044 · Group G29</p>
+        <p class="text-[11px] text-sky-400 font-mono">SIH 2026 · Problem Statement SIH26044 · Group G29 · CSE498</p>
       </div>
     </div>
     <div class="flex items-center space-x-4">
@@ -46,8 +46,8 @@
       <h1 class="text-4xl sm:text-5xl font-black text-white tracking-tight leading-tight mb-4">
         Academia–Industry Skill Mapping<br>&amp; Placement Portal
       </h1>
-      <p class="text-lg text-slate-300 max-w-2xl mb-8">
-        An intelligent NLP-powered platform for aligning university curricula with enterprise recruitment demands using Bloom's Taxonomy cognitive depth analysis.
+      <p class="text-base sm:text-lg text-slate-300 max-w-2xl mb-8">
+        An intelligent NLP system connecting university course syllabi with real corporate recruitment requirements using Bloom's Taxonomy cognitive depth analysis.
       </p>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-3xl text-left">
@@ -76,33 +76,33 @@
     <!-- SLIDE 2: THE PROBLEM -->
     <section class="slide flex-col justify-center max-w-5xl mx-auto w-full">
       <div class="mb-6">
-        <span class="text-xs font-mono text-sky-400 font-bold uppercase tracking-wider">Problem Context</span>
-        <h2 class="text-3xl font-extrabold text-white mt-1">The Academia–Industry Competency Divide</h2>
+        <span class="text-xs font-mono text-sky-400 font-bold uppercase tracking-wider">Campus Reality</span>
+        <h2 class="text-3xl font-extrabold text-white mt-1">The Practical Problem: Why High CGPA != Placement Ready</h2>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div class="glass-card p-6 rounded-2xl space-y-4">
-          <h3 class="text-lg font-bold text-rose-400 flex items-center gap-2">
-            <i data-lucide="alert-triangle" class="w-5 h-5"></i> Systemic Challenges
+        <div class="glass-card p-6 rounded-2xl space-y-3.5">
+          <h3 class="text-base font-bold text-rose-400 flex items-center gap-2">
+            <i data-lucide="alert-triangle" class="w-5 h-5"></i> What College Students Experience
           </h3>
-          <p class="text-sm text-slate-300"><strong>Curriculum Revision Lag:</strong> Academic syllabi take 2–4 years to update, while enterprise software stacks change every few months.</p>
-          <p class="text-sm text-slate-300"><strong>Opaque Grading:</strong> CGPA and percentage scores fail to communicate practical code-level or architecture-level proficiency.</p>
-          <p class="text-sm text-slate-300"><strong>Placement Bottlenecks:</strong> Placement cells lack real-time telemetry on whether students qualify for specific corporate vacancy profiles.</p>
+          <p class="text-xs text-slate-300"><strong>Curriculum Lag:</strong> Syllabi are revised every 2–3 years, while tech companies hire for Docker, FastAPI, React, and Git workflows.</p>
+          <p class="text-xs text-slate-300"><strong>Theory vs. Production:</strong> Passing an exam in DBMS theory doesn't mean knowing how to write indexed PostgreSQL queries or manage transactions.</p>
+          <p class="text-xs text-slate-300"><strong>Blind Preparation:</strong> Students don't know what specific skills they lack for a target company until technical rounds begin.</p>
         </div>
         <div class="glass-card p-6 rounded-2xl space-y-3">
-          <h3 class="text-lg font-bold text-sky-400 flex items-center gap-2">
-            <i data-lucide="users" class="w-5 h-5"></i> Who It Affects
+          <h3 class="text-base font-bold text-sky-400 flex items-center gap-2">
+            <i data-lucide="check-circle-2" class="w-5 h-5"></i> How Our Portal Solves This
           </h3>
           <div class="p-3 bg-slate-900/60 rounded-xl border border-slate-700/60">
-            <h4 class="text-xs font-bold text-sky-300 uppercase">Students</h4>
-            <p class="text-xs text-slate-400">Blind to missing competencies; lack personalized roadmap to crack interviews.</p>
+            <h4 class="text-xs font-bold text-sky-300 uppercase">For Students</h4>
+            <p class="text-xs text-slate-400">Radial readiness gauge showing matched vs missing skills with direct course links.</p>
           </div>
           <div class="p-3 bg-slate-900/60 rounded-xl border border-slate-700/60">
-            <h4 class="text-xs font-bold text-sky-300 uppercase">Faculty &amp; Board of Studies</h4>
-            <p class="text-xs text-slate-400">Lack programmatic feedback to modernize lecture modules and practical labs.</p>
+            <h4 class="text-xs font-bold text-sky-300 uppercase">For Teachers</h4>
+            <p class="text-xs text-slate-400">Automated syllabus analysis to check industry coverage and Bloom's cognitive depth.</p>
           </div>
           <div class="p-3 bg-slate-900/60 rounded-xl border border-slate-700/60">
-            <h4 class="text-xs font-bold text-sky-300 uppercase">Placement Officers &amp; Employers</h4>
-            <p class="text-xs text-slate-400">Burdened with noisy screening; need auditable evidence of verified skills.</p>
+            <h4 class="text-xs font-bold text-sky-300 uppercase">For Placement Cell</h4>
+            <p class="text-xs text-slate-400">Cohort skill filtering and one-click CSV candidate export for visiting companies.</p>
           </div>
         </div>
       </div>
@@ -120,11 +120,11 @@
           <span class="px-3 py-1 bg-emerald-500/20 text-emerald-300 text-xs font-mono font-bold rounded-lg border border-emerald-500/30">Ministry of Ayush · Govt. of India</span>
           <span class="px-3 py-1 bg-purple-500/20 text-purple-300 text-xs font-mono font-bold rounded-lg border border-purple-500/30">SIH 2026</span>
         </div>
-        <p class="text-base text-slate-200 leading-relaxed">
-          The Ministry of Ayush and higher technical institutions mandated an automated software solution to map academic curricula to rapidly modernizing industry requirements, tracking student competency development through data-driven telemetry.
+        <p class="text-sm text-slate-200 leading-relaxed">
+          The Ministry of Ayush and higher education councils identified that college graduates across computing and allied health informatics lack structured tracking of their competencies against emerging digital industry standards. Colleges had no automated software tool to compare curricula with corporate hiring trends.
         </p>
-        <div class="p-4 bg-slate-900/80 rounded-2xl border border-slate-800 text-sm text-slate-400">
-          <strong class="text-sky-300">Project Boundary &amp; Independence:</strong> This CA-1 submission is our independent academic design, implementation, and empirical evaluation for Lovely Professional University. It establishes a complete 5-role full-stack system and NLP benchmark pipeline.
+        <div class="p-4 bg-slate-900/80 rounded-2xl border border-slate-800 text-xs text-slate-400">
+          <strong class="text-sky-300">Our Independent CA-1 Project:</strong> Taking inspiration from this nationwide challenge, we designed and built an independent, fully working web application and NLP benchmark pipeline tailored for our university campus.
         </div>
       </div>
     </section>
@@ -133,15 +133,15 @@
     <section class="slide flex-col justify-center max-w-5xl mx-auto w-full">
       <div class="mb-6">
         <span class="text-xs font-mono text-sky-400 font-bold uppercase tracking-wider">Project Scope</span>
-        <h2 class="text-3xl font-extrabold text-white mt-1">Three Core Objectives</h2>
+        <h2 class="text-3xl font-extrabold text-white mt-1">Our Three Core Objectives</h2>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
         <div class="glass-card p-6 rounded-2xl border-t-4 border-t-sky-500 flex flex-col justify-between">
           <div>
             <span class="text-xs font-mono font-bold text-sky-400">OBJECTIVE 1</span>
-            <h3 class="text-base font-bold text-white mt-1 mb-3">Automated NLP Skill Extraction</h3>
+            <h3 class="text-base font-bold text-white mt-1 mb-2">Automated Skill Extraction</h3>
             <p class="text-xs text-slate-300 leading-relaxed">
-              Parse unstructured syllabi and recruitment JDs. Normalize surface variants to canonical taxonomy slugs using boundary regexes.
+              Build an NLP pipeline that reads syllabi and company JDs, maps aliases (e.g. 'Postgres' -> 'PostgreSQL'), and outputs standardized skills.
             </p>
           </div>
           <div class="mt-4 pt-3 border-t border-slate-700/50 text-[11px] font-mono text-emerald-400">
@@ -152,9 +152,9 @@
         <div class="glass-card p-6 rounded-2xl border-t-4 border-t-emerald-500 flex flex-col justify-between">
           <div>
             <span class="text-xs font-mono font-bold text-emerald-400">OBJECTIVE 2</span>
-            <h3 class="text-base font-bold text-white mt-1 mb-3">Bloom's Cognitive Gap Engine</h3>
+            <h3 class="text-base font-bold text-white mt-1 mb-2">Bloom-Weighted Gap Engine</h3>
             <p class="text-xs text-slate-300 leading-relaxed">
-              Formulate a weighted readiness metric incorporating prerequisite importance and Bloom's Revised Taxonomy levels (1.0x to 2.0x).
+              Mathematically compare student skills with job prerequisites. Weight skills by cognitive depth (Level 1–2: 1.0x, Level 3–4: 1.5x, Level 5–6: 2.0x).
             </p>
           </div>
           <div class="mt-4 pt-3 border-t border-slate-700/50 text-[11px] font-mono text-emerald-400">
@@ -165,13 +165,13 @@
         <div class="glass-card p-6 rounded-2xl border-t-4 border-t-purple-500 flex flex-col justify-between">
           <div>
             <span class="text-xs font-mono font-bold text-purple-400">OBJECTIVE 3</span>
-            <h3 class="text-base font-bold text-white mt-1 mb-3">Role-Based Telemetry Portal</h3>
+            <h3 class="text-base font-bold text-white mt-1 mb-2">Multi-Role Web Application</h3>
             <p class="text-xs text-slate-300 leading-relaxed">
-              Construct a responsive multi-role web platform (Students, Faculty, Placement, Recruiters, Admin) with live radial charts and CSV exports.
+              Build a responsive full-stack platform with five role dashboards: Students, Faculty, Placement Officers, Recruiters, and Admins.
             </p>
           </div>
           <div class="mt-4 pt-3 border-t border-slate-700/50 text-[11px] font-mono text-emerald-400">
-            Target: 5 Dashboards + Live API
+            Target: 5 Dashboards + CSV Export
           </div>
         </div>
       </div>
@@ -180,8 +180,8 @@
     <!-- SLIDE 5: DATASET -->
     <section class="slide flex-col justify-center max-w-5xl mx-auto w-full">
       <div class="mb-4">
-        <span class="text-xs font-mono text-sky-400 font-bold uppercase tracking-wider">Corpus &amp; Benchmarks</span>
-        <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-1">Ground-Truth Benchmark Dataset</h2>
+        <span class="text-xs font-mono text-sky-400 font-bold uppercase tracking-wider">Benchmark Corpus</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-1">Ground-Truth Dataset (6 Docs, 30 Skills)</h2>
       </div>
       <div class="glass-card rounded-2xl overflow-hidden border border-slate-700">
         <table class="w-full text-xs text-left text-slate-300">
@@ -189,75 +189,75 @@
             <tr>
               <th class="p-3">Doc ID</th>
               <th class="p-3">Type</th>
-              <th class="p-3">Domain / Course</th>
-              <th class="p-3">Verified Skills (Ground Truth)</th>
+              <th class="p-3">Domain / Course Outline</th>
+              <th class="p-3">Target Skills (Ground Truth)</th>
             </tr>
           </thead>
           <tbody class="divide-y divide-slate-800">
             <tr><td class="p-2.5 font-mono text-sky-400">sample-01</td><td class="p-2.5">Curriculum</td><td class="p-2.5">Data Structures &amp; Algorithms</td><td class="p-2.5 font-mono text-slate-400">Python, Algorithms, Data Structures, Git, Unit Testing</td></tr>
-            <tr class="bg-slate-800/30"><td class="p-2.5 font-mono text-sky-400">sample-02</td><td class="p-2.5">Job Description</td><td class="p-2.5">Full Stack Software Engineer</td><td class="p-2.5 font-mono text-slate-400">Python, FastAPI, React, PostgreSQL, Docker, Git</td></tr>
+            <tr class="bg-slate-800/30"><td class="p-2.5 font-mono text-sky-400">sample-02</td><td class="p-2.5">Job Posting</td><td class="p-2.5">Full Stack Software Engineer</td><td class="p-2.5 font-mono text-slate-400">Python, FastAPI, React, PostgreSQL, Docker, Git</td></tr>
             <tr><td class="p-2.5 font-mono text-sky-400">sample-03</td><td class="p-2.5">Curriculum</td><td class="p-2.5">Database Systems</td><td class="p-2.5 font-mono text-slate-400">SQL, PostgreSQL, Database Design, Indexing, Transactions</td></tr>
-            <tr class="bg-slate-800/30"><td class="p-2.5 font-mono text-sky-400">sample-04</td><td class="p-2.5">Job Description</td><td class="p-2.5">Machine Learning Engineer</td><td class="p-2.5 font-mono text-slate-400">Python, Machine Learning, PyTorch, Scikit-Learn, Docker</td></tr>
+            <tr class="bg-slate-800/30"><td class="p-2.5 font-mono text-sky-400">sample-04</td><td class="p-2.5">Job Posting</td><td class="p-2.5">Machine Learning Engineer</td><td class="p-2.5 font-mono text-slate-400">Python, Machine Learning, PyTorch, Scikit-Learn, Docker</td></tr>
             <tr><td class="p-2.5 font-mono text-sky-400">sample-05</td><td class="p-2.5">Curriculum</td><td class="p-2.5">Cloud &amp; DevOps Engineering</td><td class="p-2.5 font-mono text-slate-400">Docker, Kubernetes, CI/CD, Linux, Cloud Computing</td></tr>
-            <tr class="bg-slate-800/30"><td class="p-2.5 font-mono text-sky-400">sample-06</td><td class="p-2.5">Job Description</td><td class="p-2.5">Ayush Health Informaticist</td><td class="p-2.5 font-mono text-slate-400">Python, Data Analysis, SQL, Health Informatics, Statistics</td></tr>
+            <tr class="bg-slate-800/30"><td class="p-2.5 font-mono text-sky-400">sample-06</td><td class="p-2.5">Job Posting</td><td class="p-2.5">Ayush Health Informaticist</td><td class="p-2.5 font-mono text-slate-400">Python, Data Analysis, SQL, Health Informatics, Statistics</td></tr>
           </tbody>
         </table>
       </div>
       <p class="text-xs text-slate-400 mt-3 font-mono">
-        Total: 6 comprehensive multi-page documents · 30 verified ground-truth skills · Standardized CC BY 4.0 license.
+        Syllabi from authentic LPU CSE course outlines · Job postings from TechCorp and Ayush teams · CC BY 4.0 license.
       </p>
     </section>
 
     <!-- SLIDE 6: METHOD & BASELINE -->
     <section class="slide flex-col justify-center max-w-5xl mx-auto w-full">
       <div class="mb-6">
-        <span class="text-xs font-mono text-sky-400 font-bold uppercase tracking-wider">Algorithmic Design</span>
-        <h2 class="text-3xl font-extrabold text-white mt-1">Proposed NLP Pipeline vs. Naive Baseline</h2>
+        <span class="text-xs font-mono text-sky-400 font-bold uppercase tracking-wider">Engineering Logic</span>
+        <h2 class="text-3xl font-extrabold text-white mt-1">Why Naive Keyword Search Fails &amp; How We Fix It</h2>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div class="glass-card p-6 rounded-2xl border-rose-500/40 space-y-4">
+        <div class="glass-card p-6 rounded-2xl border-rose-500/40 space-y-3.5">
           <div class="flex items-center justify-between">
-            <h3 class="text-base font-bold text-rose-400">Baseline: Naive Keyword Matching</h3>
+            <h3 class="text-base font-bold text-rose-400">The Baseline: Naive Substring</h3>
             <span class="text-[10px] font-mono bg-rose-500/20 text-rose-300 px-2 py-0.5 rounded">F1: 0.7059</span>
           </div>
-          <p class="text-xs text-slate-300"><strong>Mechanism:</strong> Naive substring lookup (<code>if skill in text.lower()</code>).</p>
-          <p class="text-xs text-slate-300"><strong>Flaw 1 (False Positives):</strong> Substring collisions match unrelated words (e.g. 'C' in 'Cloud', 'CSS' in 'Access').</p>
-          <p class="text-xs text-slate-300"><strong>Flaw 2 (False Negatives):</strong> Misses all synonyms and abbreviations ('k8s' for Kubernetes, 'pgSQL' for PostgreSQL).</p>
+          <p class="text-xs text-slate-300"><strong>Substring Collisions:</strong> Matches single letters or words inside unrelated text—e.g. matches 'C' language inside 'Cloud' and 'CSS' inside 'Access'!</p>
+          <p class="text-xs text-slate-300"><strong>Missed Synonyms:</strong> Fails on common aliases—misses 'Postgres' for PostgreSQL and 'k8s' for Kubernetes (missed 12 true skills!).</p>
+          <p class="text-xs text-slate-300"><strong>No Cognitive Depth:</strong> Treats a student who just memorized a syntax rule identically to one who built a production project.</p>
         </div>
 
-        <div class="glass-card p-6 rounded-2xl border-emerald-500/40 space-y-4">
+        <div class="glass-card p-6 rounded-2xl border-emerald-500/40 space-y-3.5">
           <div class="flex items-center justify-between">
-            <h3 class="text-base font-bold text-emerald-400">Proposed: Rule-Enhanced NLP Pipeline</h3>
+            <h3 class="text-base font-bold text-emerald-400">Our Rule-Enhanced NLP Pipeline</h3>
             <span class="text-[10px] font-mono bg-emerald-500/20 text-emerald-300 px-2 py-0.5 rounded">F1: 0.9123</span>
           </div>
-          <p class="text-xs text-slate-300"><strong>Boundary Regexes:</strong> Uses word-boundary patterns (<code>\b(?:alias1|alias2)\b</code>) eliminating 100% of substring collisions.</p>
-          <p class="text-xs text-slate-300"><strong>Taxonomy Normalization:</strong> Resolves diverse aliases to a single canonical technical competency slug.</p>
-          <p class="text-xs text-slate-300"><strong>Bloom Cognitive Scaling:</strong> Weights competencies by cognitive depth (Level 1-2: 1.0x, Level 3-4: 1.5x, Level 5-6: 2.0x).</p>
+          <p class="text-xs text-slate-300"><strong>Word Boundary Regex:</strong> Uses strict boundary patterns (<code>\b(?:alias1|alias2)\b</code>), eliminating 100% of substring false positives.</p>
+          <p class="text-xs text-slate-300"><strong>Canonical Alias Mapping:</strong> Resolves all variations to a single master skill slug in our catalog.</p>
+          <p class="text-xs text-slate-300"><strong>Bloom Cognitive Scaling:</strong> Multiplies skills by depth: Level 1–2 (1.0x), Level 3–4 (1.5x), Level 5–6 (2.0x).</p>
         </div>
       </div>
     </section>
 
-    <!-- SLIDE 7: SYSTEM ARCHITECTURE -->
+    <!-- SLIDE 7: ARCHITECTURE -->
     <section class="slide flex-col justify-center max-w-5xl mx-auto w-full">
       <div class="mb-6">
-        <span class="text-xs font-mono text-sky-400 font-bold uppercase tracking-wider">Engineering Architecture</span>
-        <h2 class="text-3xl font-extrabold text-white mt-1">Four-Tier Decoupled System Architecture</h2>
+        <span class="text-xs font-mono text-sky-400 font-bold uppercase tracking-wider">System Architecture</span>
+        <h2 class="text-3xl font-extrabold text-white mt-1">Four-Tier Decoupled Tech Stack</h2>
       </div>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         <div class="glass-card p-5 rounded-2xl border-sky-500/30">
           <span class="text-[10px] font-mono text-sky-400 font-bold uppercase">Tier 1 · UI Layer</span>
           <h3 class="text-sm font-bold text-white mt-1 mb-2">React 18 &amp; Vite</h3>
-          <p class="text-xs text-slate-400">TailwindCSS, Lucide icons, responsive role dashboards, interactive radial gauges, and instant one-click evaluator login.</p>
+          <p class="text-xs text-slate-400">TailwindCSS, Lucide icons, responsive role dashboards, interactive radial gauges, and zero-dependency standalone HTML mode.</p>
         </div>
         <div class="glass-card p-5 rounded-2xl border-sky-500/30">
           <span class="text-[10px] font-mono text-sky-400 font-bold uppercase">Tier 2 · Gateway</span>
           <h3 class="text-sm font-bold text-white mt-1 mb-2">FastAPI &amp; JWT</h3>
-          <p class="text-xs text-slate-400">Python 3.13 REST API with OAuth2 Bearer tokens, role-based access control (RBAC), and automated Swagger documentation.</p>
+          <p class="text-xs text-slate-400">Python 3.13 REST API with OAuth2 Bearer tokens, role-based access control (RBAC), and automatic Swagger docs.</p>
         </div>
         <div class="glass-card p-5 rounded-2xl border-sky-500/30">
           <span class="text-[10px] font-mono text-sky-400 font-bold uppercase">Tier 3 · NLP Engine</span>
           <h3 class="text-sm font-bold text-white mt-1 mb-2">Bloom Gap Engine</h3>
-          <p class="text-xs text-slate-400">Boundary regex extractor, synonym mapper, Bloom cognitive depth scaling, and personalized remediation path generator.</p>
+          <p class="text-xs text-slate-400">Regex entity extractor, canonical synonym resolver, cognitive depth scoring, and personalized course recommendation mapper.</p>
         </div>
         <div class="glass-card p-5 rounded-2xl border-sky-500/30">
           <span class="text-[10px] font-mono text-sky-400 font-bold uppercase">Tier 4 · Data</span>
@@ -267,11 +267,11 @@
       </div>
     </section>
 
-    <!-- SLIDE 8: RESULTS TABLE -->
+    <!-- SLIDE 8: RESULTS -->
     <section class="slide flex-col justify-center max-w-5xl mx-auto w-full">
       <div class="mb-4">
-        <span class="text-xs font-mono text-sky-400 font-bold uppercase tracking-wider">Empirical Validation</span>
-        <h2 class="text-3xl font-extrabold text-white mt-1">Quantitative Results Against Baseline</h2>
+        <span class="text-xs font-mono text-sky-400 font-bold uppercase tracking-wider">Experimental Validation</span>
+        <h2 class="text-3xl font-extrabold text-white mt-1">Real Benchmark Results Against Baseline</h2>
       </div>
       <div class="glass-card rounded-2xl overflow-hidden border border-slate-700 mb-6">
         <table class="w-full text-sm text-center text-slate-300">
@@ -312,56 +312,56 @@
         </div>
         <div class="glass-card p-4 rounded-xl border-sky-500/40">
           <p class="text-2xl font-black text-sky-400 font-mono">+26.67%</p>
-          <p class="text-xs text-slate-400 mt-1">Higher True Recall (26/30)</p>
+          <p class="text-xs text-slate-400 mt-1">Higher Recall (26/30 Skills)</p>
         </div>
         <div class="glass-card p-4 rounded-xl border-purple-500/40">
           <p class="text-2xl font-black text-purple-400 font-mono">0.9630</p>
-          <p class="text-xs text-slate-400 mt-1">Extraction Precision (26/27)</p>
+          <p class="text-xs text-slate-400 mt-1">High Extraction Precision (26/27)</p>
         </div>
       </div>
     </section>
 
-    <!-- SLIDE 9: LIVE DEMO -->
+    <!-- SLIDE 9: DEMO -->
     <section class="slide flex-col justify-center max-w-5xl mx-auto w-full">
       <div class="mb-4">
-        <span class="text-xs font-mono text-sky-400 font-bold uppercase tracking-wider">Live System Demo</span>
-        <h2 class="text-3xl font-extrabold text-white mt-1">Role-Based Dashboard Features</h2>
+        <span class="text-xs font-mono text-sky-400 font-bold uppercase tracking-wider">Live System Walkthrough</span>
+        <h2 class="text-3xl font-extrabold text-white mt-1">Five Dedicated Role Portals</h2>
       </div>
       <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
         <div class="glass-card p-4 rounded-2xl">
-          <h4 class="text-sm font-bold text-sky-400 mb-2">Student Portal</h4>
+          <h4 class="text-sm font-bold text-sky-400 mb-2">Student View</h4>
           <ul class="text-xs text-slate-300 space-y-1.5 list-disc list-inside">
             <li>Weighted Readiness %</li>
-            <li>Matched/Partial/Missing</li>
-            <li>Curated Learning Links</li>
-            <li>Verified Evidence Tag</li>
+            <li>Matched/Missing Skills</li>
+            <li>Curated Course Links</li>
+            <li>Certified Evidence Tags</li>
           </ul>
         </div>
         <div class="glass-card p-4 rounded-2xl">
-          <h4 class="text-sm font-bold text-emerald-400 mb-2">Faculty Portal</h4>
+          <h4 class="text-sm font-bold text-emerald-400 mb-2">Faculty View</h4>
           <ul class="text-xs text-slate-300 space-y-1.5 list-disc list-inside">
             <li>Syllabus Extraction</li>
             <li>Bloom's Depth Review</li>
-            <li>Course Outcome (CO)</li>
+            <li>Course Outcome Check</li>
             <li>Industry Fit Gauge</li>
           </ul>
         </div>
         <div class="glass-card p-4 rounded-2xl">
-          <h4 class="text-sm font-bold text-amber-400 mb-2">Placement Officer</h4>
+          <h4 class="text-sm font-bold text-amber-400 mb-2">Placement View</h4>
           <ul class="text-xs text-slate-300 space-y-1.5 list-disc list-inside">
             <li>Cohort Analytics</li>
             <li>Department Filtering</li>
-            <li>High-Readiness Feed</li>
-            <li>Export Audit CSV</li>
+            <li>Top-Candidate Feed</li>
+            <li>Export Candidate CSV</li>
           </ul>
         </div>
         <div class="glass-card p-4 rounded-2xl">
           <h4 class="text-sm font-bold text-purple-400 mb-2">Recruiter &amp; Admin</h4>
           <ul class="text-xs text-slate-300 space-y-1.5 list-disc list-inside">
-            <li>Dynamic JD Parsing</li>
-            <li>Importance Weighting</li>
+            <li>Dynamic JD Upload</li>
+            <li>Skill Weighting</li>
             <li>Audit Event Trail</li>
-            <li>Database Telemetry</li>
+            <li>System Health Telemetry</li>
           </ul>
         </div>
       </div>
@@ -378,21 +378,21 @@
     <!-- SLIDE 10: CONCLUSION -->
     <section class="slide flex-col justify-center max-w-5xl mx-auto w-full">
       <div class="mb-6">
-        <span class="text-xs font-mono text-sky-400 font-bold uppercase tracking-wider">Summary &amp; Roadmap</span>
-        <h2 class="text-3xl font-extrabold text-white mt-1">Conclusion &amp; Strategic Next Steps</h2>
+        <span class="text-xs font-mono text-sky-400 font-bold uppercase tracking-wider">Project Takeaways</span>
+        <h2 class="text-3xl font-extrabold text-white mt-1">What We Learned, Limitations &amp; Next Steps</h2>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div class="glass-card p-6 rounded-2xl space-y-3">
-          <h3 class="text-base font-bold text-sky-400">Accomplishments</h3>
-          <p class="text-xs text-slate-300">Delivered full production portal with 5 functional stakeholder dashboards.</p>
-          <p class="text-xs text-slate-300">Empirically validated NLP pipeline outperforming baseline with <strong>0.9123 F1-Score</strong> (+20.64% boost).</p>
-          <p class="text-xs text-slate-300">Mathematically formulated Bloom-weighted placement readiness metric.</p>
+          <h3 class="text-base font-bold text-sky-400">Current Limitations</h3>
+          <p class="text-xs text-slate-300"><strong>Catalog Updating:</strong> Brand-new software libraries released recently require adding an alias entry to our catalog.</p>
+          <p class="text-xs text-slate-300"><strong>Text-Based Evidence:</strong> Checks syllabi and project descriptions; does not yet execute code or run test cases on GitHub repos.</p>
+          <p class="text-xs text-slate-300"><strong>English Syllabi:</strong> Calibrated for English-language curricula and job postings.</p>
         </div>
         <div class="glass-card p-6 rounded-2xl space-y-3">
-          <h3 class="text-base font-bold text-emerald-400">Future Scope</h3>
-          <p class="text-xs text-slate-300"><strong>Dense Transformers:</strong> Integrate BERT / Sentence-Transformers for zero-shot taxonomy discovery.</p>
-          <p class="text-xs text-slate-300"><strong>GitHub Webhooks:</strong> Automated commit and PR evaluation to verify coding mastery directly.</p>
-          <p class="text-xs text-slate-300"><strong>LMS Telemetry:</strong> Connect to Canvas/Moodle for live grade-weighted skill mastery updates.</p>
+          <h3 class="text-base font-bold text-emerald-400">Next Steps for Final Phase</h3>
+          <p class="text-xs text-slate-300"><strong>Dense Transformers (BERT):</strong> Add sentence-transformers for zero-shot discovery of emerging niche skills alongside our rule extractor.</p>
+          <p class="text-xs text-slate-300"><strong>GitHub Webhooks:</strong> Automatically inspect student GitHub repos to verify real commit history and code quality.</p>
+          <p class="text-xs text-slate-300"><strong>LMS Telemetry:</strong> Connect with university systems (Canvas, Moodle, UMS) to update student skill mastery dynamically from real lab grades.</p>
         </div>
       </div>
       <div class="text-center mt-8">
