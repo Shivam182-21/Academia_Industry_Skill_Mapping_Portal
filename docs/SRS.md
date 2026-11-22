@@ -7,6 +7,7 @@
 ### Team Details
 - **Shivam Chandel** — Roll No.: K3P25OR | Reg. No.: 12522547
 - **Navneet Kumar** — Roll No.: Navneet Kumar | Reg. No.: 12518540
+- **Section:** K3P25OR
 - **Group No.:** G29
 - **Problem Statement ID:** SIH26044 (*Portal for Academia–Industry Collaboration for Skill Mapping, Internships and Placement*)
 - **Target Organization:** Ministry of Ayush / SIH 2026
