@@ -6,8 +6,8 @@
 **Section:** K3P25OR | **Group Number:** G29  
 
 ## Group Members
-1. **Shivam Chandel** (Project Lead) · Reg No: **12522547** · Roll No: **K3P25OR**
-2. **Navneet Kumar** (Research & Data) · Reg No: **12518540** · Roll No: **Navneet Kumar**
+1. **Shivam Chandel** (Project Lead) · Reg No: **12522547** · Roll No: **RK3P25ORA20**
+2. **Navneet Kumar** (Research & Data) · Reg No: **12518540** · Roll No: **RK3P25ORB37**
 
 ---
 
