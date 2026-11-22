@@ -68,7 +68,7 @@ def seed_database():
             role=UserRole.STUDENT
         )
         u_nayneet = User(
-            name="Nayneet Kumar",
+            name="Navneet Kumar",
             email="nayneet.student@portal.edu",
             password_hash=get_password_hash("student123"),
             role=UserRole.STUDENT
@@ -338,7 +338,7 @@ def seed_database():
                     verified_by=u_faculty.user_id
                 ))
 
-        # Nayneet Kumar demonstrated skills
+        # Navneet Kumar demonstrated skills
         nayneet_skills = [
             ("Python", "advanced", "coursework", True),
             ("SQL & Relational Databases", "advanced", "project", True),
