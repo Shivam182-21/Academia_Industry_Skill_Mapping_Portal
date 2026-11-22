@@ -9,6 +9,7 @@
 - **Shivam Chandel** (Registration No.: **12522547** | Roll No.: **K3P25OR**)  
 - **Navneet Kumar** (Registration No.: **12518540** | Roll No.: **Navneet Kumar**)  
 
+**Section:** K3P25OR  
 **Group Number:** G29  
 **Academic Year:** 2025–2026  
 
