@@ -1,7 +1,7 @@
 ================================================================================
 EMPIRICAL BENCHMARK EVALUATION RESULTS: PROPOSED PIPELINE vs. BASELINE
 Project: Academia–Industry Skill Mapping and Placement Portal
-Group: G29 | Section: RK3P25 | Course: CSE498 | SIH ID: SIH26044
+Group: G29 | Section: K3P25OR | Course: CSE498 | SIH ID: SIH26044
 ================================================================================
 
 Model / Pipeline                  Precision   Recall    F1-Score  Mapping Prec. Gap Coverage

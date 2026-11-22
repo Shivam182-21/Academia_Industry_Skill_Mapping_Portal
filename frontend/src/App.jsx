@@ -52,7 +52,7 @@ function MainApp() {
             <strong className="text-slate-800">Smart India Hackathon 2026</strong> · Problem Statement SIH26044 · Group G29
           </div>
           <div>
-            Team Members: <strong className="text-slate-700">Shivam Chandel</strong> (12522547) &amp; <strong className="text-slate-700">Nayneet Kumar</strong> (12518540)
+            Team Members: <strong className="text-slate-700">Shivam Chandel</strong> (12522547) &amp; <strong className="text-slate-700">Navneet Kumar</strong> (12518540)
           </div>
           <div className="text-[11px] font-mono text-slate-400">
             FastAPI + React + NLP Intelligence Engine

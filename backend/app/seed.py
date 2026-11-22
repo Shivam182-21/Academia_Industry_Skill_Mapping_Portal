@@ -67,9 +67,9 @@ def seed_database():
             password_hash=get_password_hash("student123"),
             role=UserRole.STUDENT
         )
-        u_nayneet = User(
-            name="Nayneet Kumar",
-            email="nayneet.student@portal.edu",
+        u_navneet = User(
+            name="Navneet Kumar",
+            email="navneet.student@portal.edu",
             password_hash=get_password_hash("student123"),
             role=UserRole.STUDENT
         )
@@ -112,7 +112,7 @@ def seed_database():
             role=UserRole.ADMIN
         )
 
-        db.add_all([u_shivam, u_shivam_gmail, u_nayneet, u_student_generic, u_faculty, u_placement, u_employer, u_admin])
+        db.add_all([u_shivam, u_shivam_gmail, u_navneet, u_student_generic, u_faculty, u_placement, u_employer, u_admin])
         db.flush()
 
         # Seed student profiles
@@ -123,8 +123,8 @@ def seed_database():
             roll_number="RK3P25ORA20",
             registration_number="12522547"
         )
-        student_nayneet = Student(
-            user_id=u_nayneet.user_id,
+        student_navneet = Student(
+            user_id=u_navneet.user_id,
             cohort_id=cohort_cse.cohort_id,
             department="Computer Science & Engineering",
             roll_number="RK3P25ORB37",
@@ -137,7 +137,7 @@ def seed_database():
             roll_number="AY3P25ORC11",
             registration_number="12519988"
         )
-        db.add_all([student_shivam, student_nayneet, student_generic])
+        db.add_all([student_shivam, student_navneet, student_generic])
         db.flush()
 
         print("Seeding academic courses & curriculum content...")
@@ -338,8 +338,8 @@ def seed_database():
                     verified_by=u_faculty.user_id
                 ))
 
-        # Nayneet Kumar demonstrated skills
-        nayneet_skills = [
+        # Navneet Kumar demonstrated skills
+        navneet_skills = [
             ("Python", "advanced", "coursework", True),
             ("SQL & Relational Databases", "advanced", "project", True),
             ("Data Structures & Algorithms", "intermediate", "coursework", True),
@@ -347,10 +347,10 @@ def seed_database():
             ("Health Informatics & EHR Standards", "intermediate", "coursework", True),
             ("Git & Version Control", "intermediate", "coursework", True)
         ]
-        for sname, prof, src, ver in nayneet_skills:
+        for sname, prof, src, ver in navneet_skills:
             if sname in skill_map:
                 db.add(StudentSkill(
-                    student_id=student_nayneet.student_id,
+                    student_id=student_navneet.student_id,
                     skill_id=skill_map[sname].skill_id,
                     proficiency_level=prof,
                     evidence_source=src,

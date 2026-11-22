@@ -1,0 +1,1 @@
+Cloud & DevOps Architecture Syllabus: Pedagogical curriculum covering Docker containerization, Kubernetes orchestration, CI/CD pipeline automation, Linux server administration, and Cloud Computing best practices.

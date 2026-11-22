@@ -19,7 +19,7 @@ export default function Navbar({ activeTab, setActiveTab }) {
 
   const demoAccounts = [
     { role: 'student', name: 'Shivam Chandel (Student)', email: 'shivam.student@portal.edu', pass: 'student123' },
-    { role: 'student', name: 'Nayneet Kumar (Student)', email: 'nayneet.student@portal.edu', pass: 'student123' },
+    { role: 'student', name: 'Navneet Kumar (Student)', email: 'navneet.student@portal.edu', pass: 'student123' },
     { role: 'faculty', name: 'Dr. Rajesh Sharma (Faculty)', email: 'faculty@portal.edu', pass: 'faculty123' },
     { role: 'placement_officer', name: 'Prof. Sunita Verma (Placement)', email: 'placement@portal.edu', pass: 'placement123' },
     { role: 'employer', name: 'TechCorp Recruiter (Industry)', email: 'partner@techcorp.com', pass: 'partner123' },
@@ -56,7 +56,7 @@ export default function Navbar({ activeTab, setActiveTab }) {
           <span className="font-medium text-slate-200">Problem ID: SIH26044 · Group G29 (Ministry of Ayush)</span>
         </div>
         <div className="flex items-center space-x-4">
-          <span className="hidden sm:inline text-slate-400">Team: Shivam Chandel & Nayneet Kumar</span>
+          <span className="hidden sm:inline text-slate-400">Team: Shivam Chandel & Navneet Kumar</span>
           <div className="relative">
             <button
               onClick={() => setRoleDropdownOpen(!roleDropdownOpen)}

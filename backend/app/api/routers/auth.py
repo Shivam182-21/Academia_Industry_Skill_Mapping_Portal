@@ -163,8 +163,8 @@ def get_demo_users():
         },
         {
             "role": "student",
-            "name": "Nayneet Kumar (SIH Team Member)",
-            "email": "nayneet.student@portal.edu",
+            "name": "Navneet Kumar (SIH Team Member)",
+            "email": "navneet.student@portal.edu",
             "password": "student123",
             "note": "Student with machine learning and health informatics skills"
         },

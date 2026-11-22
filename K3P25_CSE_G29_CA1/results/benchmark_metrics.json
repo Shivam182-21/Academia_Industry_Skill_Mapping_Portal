@@ -2,6 +2,7 @@
   "project": "Academia\u2013Industry Skill Mapping and Placement Portal",
   "group": "G29",
   "course": "CSE498",
+  "section": "K3P25OR",
   "sih_problem_id": "SIH26044",
   "metrics": {
     "baseline_naive_keyword": {

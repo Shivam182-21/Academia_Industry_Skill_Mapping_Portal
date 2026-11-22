@@ -1,0 +1,1 @@
+Database Systems Syllabus: Covers relational schema design, SQL querying, PostgreSQL database administration, indexing strategies, normalization forms, and ACID transaction guarantees.

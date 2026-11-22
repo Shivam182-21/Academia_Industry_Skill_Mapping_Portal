@@ -7,7 +7,7 @@
 
 ### Submitted by:
 - **Shivam Chandel** (Registration No.: **12522547** | Roll No.: **RK3P25ORA20**)  
-- **Nayneet Kumar** (Registration No.: **12518540** | Roll No.: **RK3P25ORB37**)  
+- **Navneet Kumar** (Registration No.: **12518540** | Roll No.: **RK3P25ORB37**)  
 
 **Group Number:** G29  
 **Academic Year:** 2025–2026  
@@ -33,7 +33,7 @@ Department of Computer Science and Engineering
 
 ## CERTIFICATE
 
-This is to certify that the project titled **"Academia–Industry Skill Mapping and Placement Portal"**, submitted by **Shivam Chandel (Reg. No. 12522547 / Roll No. RK3P25ORA20)** and **Nayneet Kumar (Reg. No. 12518540 / Roll No. RK3P25ORB37)** of Group **G29**, in partial fulfillment of the requirements for the award of the degree of **Bachelor of Technology in Computer Science and Engineering** from **Lovely Professional University**, is a bona fide record of work carried out by them under my supervision and guidance.
+This is to certify that the project titled **"Academia–Industry Skill Mapping and Placement Portal"**, submitted by **Shivam Chandel (Reg. No. 12522547 / Roll No. RK3P25ORA20)** and **Navneet Kumar (Reg. No. 12518540 / Roll No. RK3P25ORB37)** of Group **G29**, in partial fulfillment of the requirements for the award of the degree of **Bachelor of Technology in Computer Science and Engineering** from **Lovely Professional University**, is a bona fide record of work carried out by them under my supervision and guidance.
 
 To the best of my knowledge, the matter embodied in this report has not been submitted to any other University or Institute for the award of any degree or diploma.
 
@@ -68,7 +68,7 @@ External Examiner
 
 ## DECLARATION
 
-We, **Shivam Chandel** (Reg. No. 12522547, Roll No. RK3P25ORA20) and **Nayneet Kumar** (Reg. No. 12518540, Roll No. RK3P25ORB37), students of Bachelor of Technology in Computer Science and Engineering at Lovely Professional University, hereby declare that the capstone project report entitled **"Academia–Industry Skill Mapping and Placement Portal"** is an authentic record of our original work.
+We, **Shivam Chandel** (Reg. No. 12522547, Roll No. RK3P25ORA20) and **Navneet Kumar** (Reg. No. 12518540, Roll No. RK3P25ORB37), students of Bachelor of Technology in Computer Science and Engineering at Lovely Professional University, hereby declare that the capstone project report entitled **"Academia–Industry Skill Mapping and Placement Portal"** is an authentic record of our original work.
 
 We have adhered to academic ethics and have not copied or fabricated any test results, model accuracy metrics, or survey outputs. All sources of information and literature reviewed have been duly cited and acknowledged.
 
@@ -92,7 +92,7 @@ Group No.: G29
 \vspace{1.5cm}
 
 ------------------------------------------  
-**Nayneet Kumar**  
+**Navneet Kumar**  
 Registration No.: 12518540  
 Roll No.: RK3P25ORB37  
 Group No.: G29  
@@ -961,7 +961,7 @@ The web application frontend was built with React 18 and Tailwind CSS, featuring
 
 ### 11.1 Sign-In and Evaluator Access Workspace (`/login`)
 - Clean, modern authentication portal featuring email and password input.
-- **One-Click Evaluator Access Grid:** Six pre-configured cards allowing evaluators to sign in instantly as Shivam Chandel (Student Lead), Nayneet Kumar (Student), Dr. Rajesh Sharma (Faculty), Prof. Sunita Verma (Placement Officer), Vikramaditya Rao (TechCorp Employer), or System Administrator.
+- **One-Click Evaluator Access Grid:** Six pre-configured cards allowing evaluators to sign in instantly as Shivam Chandel (Student Lead), Navneet Kumar (Student), Dr. Rajesh Sharma (Faculty), Prof. Sunita Verma (Placement Officer), Vikramaditya Rao (TechCorp Employer), or System Administrator.
 
 ### 11.2 Student Readiness Dashboard (`/student`)
 - **Target Role Selector:** Dropdown permitting real-time switching between industry roles (e.g., Full Stack Engineer, Ayush Health Informatics Specialist, Cloud DevOps Engineer).

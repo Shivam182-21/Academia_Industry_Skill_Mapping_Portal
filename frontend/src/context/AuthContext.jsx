@@ -59,8 +59,8 @@ export function AuthProvider({ children }) {
       let roll = 'RK3P25ORA20';
       let studentId = 1;
 
-      if (cleanEmail.includes('nayneet')) {
-        name = 'Nayneet Kumar';
+      if (cleanEmail.includes('navneet')) {
+        name = 'Navneet Kumar';
         roll = 'RK3P25ORB37';
         studentId = 2;
       } else if (cleanEmail.includes('faculty')) {

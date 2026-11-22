@@ -5,27 +5,41 @@ import json
 
 ws = r"c:\Users\Shivam\OneDrive\Desktop\Documents\Academia_Industry_Skill_Mapping_Portal"
 ai_proj = r"C:\Users\Shivam\OneDrive\Desktop\Documents\AI PROJECT"
-ca1_dir = os.path.join(ws, "K3P25_CSE_G29_CA1")
+proj_rep = os.path.join(ws, "project_report")
 
-# 1. Report files
-report_dir = os.path.join(ca1_dir, "report")
-os.makedirs(report_dir, exist_ok=True)
-shutil.copy2(os.path.join(ai_proj, "K3P25_CSE_G29_CA1_Report.pdf"), os.path.join(report_dir, "K3P25_CSE_G29_CA1_Report.pdf"))
-shutil.copy2(os.path.join(ai_proj, "K3P25_CSE_G29_CA1_Report.docx"), os.path.join(report_dir, "K3P25_CSE_G29_CA1_Report.docx"))
+# First, ensure project_report has the latest generated PDF and DOCX files from AI PROJECT
+for fname in [
+    "K3P25OR_CSE_G29_CA1_Report.pdf",
+    "K3P25OR_CSE_G29_CA1_Report.docx",
+    "K3P25OR_CSE_G29_CA1_Slides.pptx",
+    "K3P25_CSE_G29_CA1_Report.pdf",
+    "K3P25_CSE_G29_CA1_Report.docx",
+    "K3P25_CSE_G29_CA1_Slides.pptx",
+    "K3P25_CSE_G29_CA1_Slides.html",
+    "Presentation_Notes_and_Viva_Prep.docx",
+    "Presentation_Notes_and_Viva_Prep.pdf"
+]:
+    src_file = os.path.join(ai_proj, fname)
+    if os.path.exists(src_file):
+        shutil.copy2(src_file, os.path.join(proj_rep, fname))
 
-# 2. Presentation files
-pres_dir = os.path.join(ca1_dir, "presentation")
-os.makedirs(pres_dir, exist_ok=True)
-shutil.copy2(os.path.join(ai_proj, "K3P25_CSE_G29_CA1_Slides.pptx"), os.path.join(pres_dir, "K3P25_CSE_G29_CA1_Slides.pptx"))
-shutil.copy2(os.path.join(ai_proj, "K3P25_CSE_G29_CA1_Slides.html"), os.path.join(pres_dir, "K3P25_CSE_G29_CA1_Slides.html"))
+# Also copy K3P25_CSE_G29_CA1_Slides.html as K3P25OR_CSE_G29_CA1_Slides.html
+slides_html_src = os.path.join(proj_rep, "K3P25_CSE_G29_CA1_Slides.html")
+if os.path.exists(slides_html_src):
+    shutil.copy2(slides_html_src, os.path.join(proj_rep, "K3P25OR_CSE_G29_CA1_Slides.html"))
+    shutil.copy2(slides_html_src, os.path.join(ai_proj, "K3P25OR_CSE_G29_CA1_Slides.html"))
 
-# 3. Results files
-results_dir = os.path.join(ca1_dir, "results")
-os.makedirs(results_dir, exist_ok=True)
+# We build both folder trees: K3P25OR_CSE_G29_CA1 and K3P25_CSE_G29_CA1
+dirs_to_build = [
+    os.path.join(ws, "K3P25OR_CSE_G29_CA1"),
+    os.path.join(ws, "K3P25_CSE_G29_CA1")
+]
+
 benchmark_metrics = {
     "project": "Academia–Industry Skill Mapping and Placement Portal",
     "group": "G29",
     "course": "CSE498",
+    "section": "K3P25OR",
     "sih_problem_id": "SIH26044",
     "metrics": {
         "baseline_naive_keyword": {
@@ -50,14 +64,11 @@ benchmark_metrics = {
         }
     }
 }
-with open(os.path.join(results_dir, "benchmark_metrics.json"), "w", encoding="utf-8") as f:
-    json.dump(benchmark_metrics, f, indent=2)
 
-with open(os.path.join(results_dir, "baseline_comparison.txt"), "w", encoding="utf-8") as f:
-    f.write("""================================================================================
+baseline_txt = """================================================================================
 EMPIRICAL BENCHMARK EVALUATION RESULTS: PROPOSED PIPELINE vs. BASELINE
 Project: Academia–Industry Skill Mapping and Placement Portal
-Group: G29 | Section: RK3P25 | Course: CSE498 | SIH ID: SIH26044
+Group: G29 | Section: K3P25OR | Course: CSE498 | SIH ID: SIH26044
 ================================================================================
 
 Model / Pipeline                  Precision   Recall    F1-Score  Mapping Prec. Gap Coverage
@@ -69,11 +80,8 @@ Absolute Gain                      +0.1059     +0.2667   +0.2064   +0.1800      
 Relative Improvement              +12.35%     +44.45%   +29.24%   +23.68%       +22.67%
 
 Evaluation Verdict: Met all target thresholds specified in Objective 1 (F1 >= 0.85).
-""")
+"""
 
-# 4. Data directory
-data_dir = os.path.join(ca1_dir, "data")
-os.makedirs(data_dir, exist_ok=True)
 samples = [
     ("sample-01.txt", "Data Structures & Algorithms Syllabus: Core modules covering Python programming, Abstract Data Types, binary search trees, graph algorithms, asymptotic complexity analysis, and Git version control with automated unit testing."),
     ("sample-02.txt", "Full Stack Software Engineer Job Description: Seeking software engineers with strong proficiency in Python, FastAPI, React frontend development, PostgreSQL relational database management, Docker containerization, and Git collaborative workflows."),
@@ -82,27 +90,7 @@ samples = [
     ("sample-05.txt", "Cloud & DevOps Architecture Syllabus: Pedagogical curriculum covering Docker containerization, Kubernetes orchestration, CI/CD pipeline automation, Linux server administration, and Cloud Computing best practices."),
     ("sample-06.txt", "Ayush Health Informaticist Job Description (SIH26044): Recruiter posting requiring Python data analytics, statistical modeling, SQL health database warehousing, clinical data governance, and health informatics interoperability standards.")
 ]
-for fname, content in samples:
-    with open(os.path.join(data_dir, fname), "w", encoding="utf-8") as f:
-        f.write(content)
 
-# 5. Source code (src)
-src_dir = os.path.join(ca1_dir, "src")
-os.makedirs(src_dir, exist_ok=True)
-nlp_src = os.path.join(ws, "backend", "app", "nlp")
-for pyfile in os.listdir(nlp_src):
-    if pyfile.endswith(".py"):
-        shutil.copy2(os.path.join(nlp_src, pyfile), os.path.join(src_dir, pyfile))
-
-# 6. App directory
-app_dir = os.path.join(ca1_dir, "app")
-os.makedirs(app_dir, exist_ok=True)
-shutil.copy2(os.path.join(ws, "portal.html"), os.path.join(app_dir, "index.html"))
-shutil.copy2(os.path.join(ws, "portal.html"), os.path.join(app_dir, "portal.html"))
-
-# 7. Jupyter Notebook
-notebooks_dir = os.path.join(ca1_dir, "notebooks")
-os.makedirs(notebooks_dir, exist_ok=True)
 nb_content = {
  "cells": [
   {
@@ -111,8 +99,8 @@ nb_content = {
    "source": [
     "# Academia–Industry Skill Mapping & Placement Portal\n",
     "## Exploratory Data Analysis & Empirical Benchmark Evaluation\n",
-    "**Course:** CSE498 · **Section:** RK3P25 · **Group:** G29  \n",
-    "**Students:** Shivam Chandel (12522547) & Nayneet Kumar (12518540)  \n",
+    "**Course:** CSE498 · **Section:** K3P25OR · **Group:** G29  \n",
+    "**Students:** Shivam Chandel (12522547 | RK3P25ORA20) & Navneet Kumar (12518540 | RK3P25ORB37)  \n",
     "**Problem Source:** Smart India Hackathon 2026 (SIH26044 - Ministry of Ayush)"
    ]
   },
@@ -120,7 +108,6 @@ nb_content = {
    "cell_type": "code",
    "execution_count": 1,
    "metadata": {},
-   "outputs": [],
    "source": [
     "import os, json\n",
     "print('Loading benchmark corpus and ground-truth competencies...')"
@@ -130,7 +117,6 @@ nb_content = {
    "cell_type": "code",
    "execution_count": 2,
    "metadata": {},
-   "outputs": [],
    "source": [
     "# Load ground-truth benchmark metrics\n",
     "results = {\n",
@@ -150,10 +136,7 @@ nb_content = {
  "nbformat": 4,
  "nbformat_minor": 2
 }
-with open(os.path.join(notebooks_dir, "eda_and_benchmarks.ipynb"), "w", encoding="utf-8") as f:
-    json.dump(nb_content, f, indent=1)
 
-# 8. requirements.txt
 reqs = """fastapi>=0.115.0
 uvicorn[standard]>=0.32.0
 pydantic>=2.10.0
@@ -166,20 +149,18 @@ python-pptx>=1.0.2
 pypdf>=7.1.1
 tqdm>=4.70.0
 """
-with open(os.path.join(ca1_dir, "requirements.txt"), "w", encoding="utf-8") as f:
-    f.write(reqs)
 
-# 9. README.md
-readme = """# Academia–Industry Skill Mapping and Placement Portal (Group G29)
+def make_readme(prefix):
+    return f"""# Academia–Industry Skill Mapping and Placement Portal (Group G29)
 
 **Smart India Hackathon 2026** · Problem Statement ID: **SIH26044** (Ministry of Ayush)  
 **Institution:** Lovely Professional University, Punjab  
 **Course:** CSE498 – Capstone Project & AI Systems  
-**Section:** RK3P25 (K3P25LH) | **Group Number:** G29  
+**Section:** K3P25OR | **Group Number:** G29  
 
 ## Group Members
 1. **Shivam Chandel** (Project Lead) · Reg No: **12522547** · Roll No: **RK3P25ORA20**
-2. **Nayneet Kumar** (Research & Data) · Reg No: **12518540** · Roll No: **RK3P25ORB37**
+2. **Navneet Kumar** (Research & Data) · Reg No: **12518540** · Roll No: **RK3P25ORB37**
 
 ---
 
@@ -241,7 +222,7 @@ Double-click `app/index.html` or `app/portal.html` in any web browser. The entir
 
 ## 5. Submission Folder Tree
 ```
-K3P25_CSE_G29_CA1/
+{prefix}_CSE_G29_CA1/
 |-- README.md          how to install and run, dataset link, group members
 |-- requirements.txt   Python packages with versions
 |-- data/              curriculum and job description benchmark dataset
@@ -253,19 +234,80 @@ K3P25_CSE_G29_CA1/
 `-- presentation/      official presentation slide deck (PPTX & HTML)
 ```
 """
-with open(os.path.join(ca1_dir, "README.md"), "w", encoding="utf-8") as f:
-    f.write(readme)
 
-# 10. Generate ZIP archive
-zip_path = os.path.join(ws, "K3P25_CSE_G29_CA1_Code.zip")
-print("Creating ZIP archive at:", zip_path)
-with zipfile.ZipFile(zip_path, "w", zipfile.ZIP_DEFLATED) as zipf:
-    for root, dirs, files in os.walk(ca1_dir):
-        for file in files:
-            file_path = os.path.join(root, file)
-            arcname = os.path.relpath(file_path, ws)
-            zipf.write(file_path, arcname)
+for target_dir in dirs_to_build:
+    prefix = os.path.basename(target_dir).split("_CSE")[0] # K3P25OR or K3P25
+    os.makedirs(target_dir, exist_ok=True)
+    
+    # 1. Report
+    report_dir = os.path.join(target_dir, "report")
+    os.makedirs(report_dir, exist_ok=True)
+    shutil.copy2(os.path.join(proj_rep, f"{prefix}_CSE_G29_CA1_Report.pdf"), os.path.join(report_dir, f"{prefix}_CSE_G29_CA1_Report.pdf"))
+    shutil.copy2(os.path.join(proj_rep, f"{prefix}_CSE_G29_CA1_Report.docx"), os.path.join(report_dir, f"{prefix}_CSE_G29_CA1_Report.docx"))
+    
+    # 2. Presentation
+    pres_dir = os.path.join(target_dir, "presentation")
+    os.makedirs(pres_dir, exist_ok=True)
+    shutil.copy2(os.path.join(proj_rep, f"{prefix}_CSE_G29_CA1_Slides.pptx"), os.path.join(pres_dir, f"{prefix}_CSE_G29_CA1_Slides.pptx"))
+    shutil.copy2(os.path.join(proj_rep, f"{prefix}_CSE_G29_CA1_Slides.html"), os.path.join(pres_dir, f"{prefix}_CSE_G29_CA1_Slides.html"))
+    
+    # 3. Results
+    results_dir = os.path.join(target_dir, "results")
+    os.makedirs(results_dir, exist_ok=True)
+    with open(os.path.join(results_dir, "benchmark_metrics.json"), "w", encoding="utf-8") as f:
+        json.dump(benchmark_metrics, f, indent=2)
+    with open(os.path.join(results_dir, "baseline_comparison.txt"), "w", encoding="utf-8") as f:
+        f.write(baseline_txt)
+        
+    # 4. Data
+    data_dir = os.path.join(target_dir, "data")
+    os.makedirs(data_dir, exist_ok=True)
+    for fname, content in samples:
+        with open(os.path.join(data_dir, fname), "w", encoding="utf-8") as f:
+            f.write(content)
+            
+    # 5. Src
+    src_dir = os.path.join(target_dir, "src")
+    os.makedirs(src_dir, exist_ok=True)
+    nlp_src = os.path.join(ws, "backend", "app", "nlp")
+    for pyfile in os.listdir(nlp_src):
+        if pyfile.endswith(".py"):
+            shutil.copy2(os.path.join(nlp_src, pyfile), os.path.join(src_dir, pyfile))
+            
+    # 6. App
+    app_dir = os.path.join(target_dir, "app")
+    os.makedirs(app_dir, exist_ok=True)
+    shutil.copy2(os.path.join(ws, "portal.html"), os.path.join(app_dir, "index.html"))
+    shutil.copy2(os.path.join(ws, "portal.html"), os.path.join(app_dir, "portal.html"))
+    
+    # 7. Notebooks
+    notebooks_dir = os.path.join(target_dir, "notebooks")
+    os.makedirs(notebooks_dir, exist_ok=True)
+    with open(os.path.join(notebooks_dir, "eda_and_benchmarks.ipynb"), "w", encoding="utf-8") as f:
+        json.dump(nb_content, f, indent=1)
+        
+    # 8. Requirements
+    with open(os.path.join(target_dir, "requirements.txt"), "w", encoding="utf-8") as f:
+        f.write(reqs)
+        
+    # 9. README.md
+    with open(os.path.join(target_dir, "README.md"), "w", encoding="utf-8") as f:
+        f.write(make_readme(prefix))
+        
+    # 10. Generate ZIP archive
+    zip_name = f"{prefix}_CSE_G29_CA1_Code.zip"
+    zip_path = os.path.join(ws, zip_name)
+    print(f"Creating ZIP archive at: {zip_path}")
+    with zipfile.ZipFile(zip_path, "w", zipfile.ZIP_DEFLATED) as zipf:
+        for root, dirs, files in os.walk(target_dir):
+            for file in files:
+                file_path = os.path.join(root, file)
+                arcname = os.path.relpath(file_path, ws)
+                zipf.write(file_path, arcname)
+                
+    # Mirror zip to AI PROJECT and project_report
+    shutil.copy2(zip_path, os.path.join(ai_proj, zip_name))
+    shutil.copy2(zip_path, os.path.join(proj_rep, zip_name))
+    print(f"Successfully generated and mirrored {zip_name}!")
 
-# Mirror zip to AI PROJECT
-shutil.copy2(zip_path, os.path.join(ai_proj, "K3P25_CSE_G29_CA1_Code.zip"))
-print("Successfully generated and mirrored K3P25_CSE_G29_CA1_Code.zip!")
+print("All submission packages prepared and synchronized successfully!")

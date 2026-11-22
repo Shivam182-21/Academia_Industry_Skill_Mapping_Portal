@@ -60,6 +60,6 @@ def root():
         "api_version": settings.PROJECT_VERSION,
         "team_members": [
             {"name": "Shivam Chandel", "roll": "RK3P25ORA20", "reg": "12522547"},
-            {"name": "Nayneet Kumar", "roll": "RK3P25ORB37", "reg": "12518540"}
+            {"name": "Navneet Kumar", "roll": "RK3P25ORB37", "reg": "12518540"}
         ]
     }

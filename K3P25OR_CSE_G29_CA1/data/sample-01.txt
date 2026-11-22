@@ -1,0 +1,1 @@
+Data Structures & Algorithms Syllabus: Core modules covering Python programming, Abstract Data Types, binary search trees, graph algorithms, asymptotic complexity analysis, and Git version control with automated unit testing.

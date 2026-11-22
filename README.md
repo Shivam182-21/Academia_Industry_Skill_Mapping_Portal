@@ -5,7 +5,7 @@
 
 ### Team Information
 - **Shivam Chandel** (Roll No.: RK3P25ORA20 · Reg. No.: 12522547)
-- **Nayneet Kumar** (Roll No.: RK3P25ORB37 · Reg. No.: 12518540)
+- **Navneet Kumar** (Roll No.: RK3P25ORB37 · Reg. No.: 12518540)
 - **Group:** G29
 - **Organization / Ministry:** Ministry of Ayush / Smart India Hackathon 2026
 
@@ -81,7 +81,7 @@ The login screen features **one-click evaluator access cards** for instant testi
 | Role | Name | Email | Password | Primary Capabilities in Portal |
 | :--- | :--- | :--- | :--- | :--- |
 | **Student (Team Lead)** | Shivam Chandel | `shivam.student@portal.edu` | `student123` | Target role selector, radial gauges, demonstrated vs missing skills, ranked recommendations, submit skill evidence. |
-| **Student (Team Member)** | Nayneet Kumar | `nayneet.student@portal.edu` | `student123` | Machine learning & Ayush health informatics student profile. |
+| **Student (Team Member)** | Navneet Kumar | `navneet.student@portal.edu` | `student123` | Machine learning & Ayush health informatics student profile. |
 | **Faculty Member** | Dr. Rajesh Sharma | `faculty@portal.edu` | `faculty123` | Upload syllabus text, trigger NLP skill extraction, review/approve skills ($1.0$ vs $0.5$). |
 | **Placement Officer** | Prof. Sunita Verma | `placement@portal.edu` | `placement123` | Cohort readiness tiers, aggregate shortage heatmap, export placement reports (CSV). |
 | **Industry Partner** | TechCorp Recruiter | `partner@techcorp.com` | `partner123` | Upload job descriptions, adjust skill importance weights ($w_i$), configure required proficiency. |
@@ -114,3 +114,17 @@ All 12 test scenarios from the SRS pass:
 For detailed architecture flowcharts, ER diagrams, Use Case diagrams, and DFDs, see:
 - [docs/architecture_diagrams.md](file:///c:/Users/Shivam/OneDrive/Desktop/Documents/Academia_Industry_Skill_Mapping_Portal/docs/architecture_diagrams.md)
 - [docs/SRS.md](file:///c:/Users/Shivam/OneDrive/Desktop/Documents/Academia_Industry_Skill_Mapping_Portal/docs/SRS.md)
+
+---
+
+## 7. Submission Package & Deliverables (CA-1 / Capstone)
+
+| Deliverable | File Path | Format / Description |
+| :--- | :--- | :--- |
+| **Official CA-1 Project Report** | [`project_report/K3P25OR_CSE_G29_CA1_Report.pdf`](file:///c:/Users/Shivam/OneDrive/Desktop/Documents/Academia_Industry_Skill_Mapping_Portal/project_report/K3P25OR_CSE_G29_CA1_Report.pdf) | Academic report formatted strictly to LPU guidelines ([Word .docx](file:///c:/Users/Shivam/OneDrive/Desktop/Documents/Academia_Industry_Skill_Mapping_Portal/project_report/K3P25OR_CSE_G29_CA1_Report.docx)) |
+| **Official Presentation Slides** | [`project_report/K3P25OR_CSE_G29_CA1_Slides.pptx`](file:///c:/Users/Shivam/OneDrive/Desktop/Documents/Academia_Industry_Skill_Mapping_Portal/project_report/K3P25OR_CSE_G29_CA1_Slides.pptx) | Modern dark-themed slide deck ([Interactive HTML](file:///c:/Users/Shivam/OneDrive/Desktop/Documents/Academia_Industry_Skill_Mapping_Portal/project_report/K3P25OR_CSE_G29_CA1_Slides.html)) |
+| **Presentation Notes & Viva Prep** | [`project_report/Presentation_Notes_and_Viva_Prep.pdf`](file:///c:/Users/Shivam/OneDrive/Desktop/Documents/Academia_Industry_Skill_Mapping_Portal/project_report/Presentation_Notes_and_Viva_Prep.pdf) | Turn-by-turn presentation script & 25 rigorous viva Q&As ([Word .docx](file:///c:/Users/Shivam/OneDrive/Desktop/Documents/Academia_Industry_Skill_Mapping_Portal/project_report/Presentation_Notes_and_Viva_Prep.docx)) |
+| **Full Implementation Package** | [`K3P25OR_CSE_G29_CA1_Code.zip`](file:///c:/Users/Shivam/OneDrive/Desktop/Documents/Academia_Industry_Skill_Mapping_Portal/K3P25OR_CSE_G29_CA1_Code.zip) | Complete submission ZIP archive with code, data, notebooks, app, and results |
+| **Submission Folder Tree** | [`K3P25OR_CSE_G29_CA1/`](file:///c:/Users/Shivam/OneDrive/Desktop/Documents/Academia_Industry_Skill_Mapping_Portal/K3P25OR_CSE_G29_CA1/) | Guideline-compliant submission directory structure |
+| **Zero-Config Standalone App** | [`portal.html`](file:///c:/Users/Shivam/OneDrive/Desktop/Documents/Academia_Industry_Skill_Mapping_Portal/portal.html) | Instant browser-runnable portal with one-click evaluator login |
+

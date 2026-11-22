@@ -2,7 +2,7 @@
 ## System Architecture & Technical Diagrams
 **Smart India Hackathon 2026 · Group G29**
 - **Problem Statement ID:** SIH26044
-- **Team Members:** Shivam Chandel (12522547) & Nayneet Kumar (12518540)
+- **Team Members:** Shivam Chandel (12522547) & Navneet Kumar (12518540)
 
 ---
 

@@ -5,7 +5,7 @@ import { GraduationCap, ArrowRight, ShieldCheck, Sparkles } from 'lucide-react';
 
 const FALLBACK_DEMO_USERS = [
   { name: 'Shivam Chandel', email: 'chandels0708@gmail.com', password: 'student123', role: 'student', note: 'Reg: 12522547 | Roll: RK3P25ORA20 | Project Lead' },
-  { name: 'Nayneet Kumar', email: 'nayneet.student@portal.edu', password: 'student123', role: 'student', note: 'Reg: 12518540 | Roll: RK3P25ORB37 | Research' },
+  { name: 'Navneet Kumar', email: 'navneet.student@portal.edu', password: 'student123', role: 'student', note: 'Reg: 12518540 | Roll: RK3P25ORB37 | Research' },
   { name: 'Dr. Rajesh Sharma', email: 'faculty@portal.edu', password: 'faculty123', role: 'faculty', note: 'School of CSE | Curriculum Lead' },
   { name: 'Prof. Sunita Verma', email: 'placement@portal.edu', password: 'placement123', role: 'placement_officer', note: 'Placement Cell | Industry Liaison' },
   { name: 'TechCorp Recruiter', email: 'partner@techcorp.com', password: 'partner123', role: 'employer', note: 'Industry Partner | Recruitment' },
@@ -80,7 +80,7 @@ export default function Login() {
           Smart India Hackathon 2026 · Problem Statement SIH26044 · Group G29
         </p>
         <p className="text-xs text-slate-400 mt-1 font-medium">
-          Ministry of Ayush · Shivam Chandel and Nayneet Kumar · LPU
+          Ministry of Ayush · Shivam Chandel and Navneet Kumar · LPU
         </p>
       </div>
 

@@ -57,7 +57,7 @@ def generate_report():
 
     p_by = doc.add_paragraph()
     p_by.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    r_by = p_by.add_run("Submitted by:\nShivam Chandel (Reg. No.: 12522547 | Roll No.: RK3P25ORA20)\nNayneet Kumar (Reg. No.: 12518540 | Roll No.: RK3P25ORB37)\n\nGroup Number: G29 · Academic Year: 2025–2026\n\n")
+    r_by = p_by.add_run("Submitted by:\nShivam Chandel (Reg. No.: 12522547 | Roll No.: RK3P25ORA20)\nNavneet Kumar (Reg. No.: 12518540 | Roll No.: RK3P25ORB37)\n\nGroup Number: G29 · Academic Year: 2025–2026\n\n")
     r_by.font.size = Pt(12)
     r_by.bold = True
 
@@ -78,7 +78,7 @@ def generate_report():
     h_cert = doc.add_heading("CERTIFICATE", level=1)
     p_cert = doc.add_paragraph(
         "This is to certify that the capstone project entitled \"Academia–Industry Skill Mapping and Placement Portal\", "
-        "submitted by Shivam Chandel (Reg. No. 12522547 / Roll No. RK3P25ORA20) and Nayneet Kumar (Reg. No. 12518540 / Roll No. RK3P25ORB37) "
+        "submitted by Shivam Chandel (Reg. No. 12522547 / Roll No. RK3P25ORA20) and Navneet Kumar (Reg. No. 12518540 / Roll No. RK3P25ORB37) "
         "of Group G29, in partial fulfillment of the requirements for the award of the degree of Bachelor of Technology in Computer Science and Engineering "
         "from Lovely Professional University, is a bona fide record of work carried out by them under my supervision and guidance."
     )
@@ -93,7 +93,7 @@ def generate_report():
     # Declaration
     doc.add_heading("DECLARATION", level=1)
     doc.add_paragraph(
-        "We, Shivam Chandel (Reg. No. 12522547, Roll No. RK3P25ORA20) and Nayneet Kumar (Reg. No. 12518540, Roll No. RK3P25ORB37), "
+        "We, Shivam Chandel (Reg. No. 12522547, Roll No. RK3P25ORA20) and Navneet Kumar (Reg. No. 12518540, Roll No. RK3P25ORB37), "
         "students of Bachelor of Technology in Computer Science and Engineering at Lovely Professional University, hereby declare that the capstone project report entitled "
         "\"Academia–Industry Skill Mapping and Placement Portal\" is an authentic record of our original work.\n\n"
         "We have adhered to academic ethics and have not copied or fabricated any test results, model accuracy metrics, or survey outputs. "
@@ -102,7 +102,7 @@ def generate_report():
         "listed under the Ministry of Ayush.\n\n"
         "Date: 20th October 2026\nPlace: Phagwara, Punjab\n\n\n"
         "___________________________________\t\t___________________________________\n"
-        "Shivam Chandel\t\t\t\t\tNayneet Kumar\n"
+        "Shivam Chandel\t\t\t\t\tNavneet Kumar\n"
         "Reg. No.: 12522547\t\t\t\tReg. No.: 12518540\n"
         "Roll No.: RK3P25ORA20\t\t\t\tRoll No.: RK3P25ORB37"
     )
