@@ -9,6 +9,7 @@
 - **Shivam Chandel** (Registration No.: **12522547** | Roll No.: **RK3P25ORA20**)  
 - **Navneet Kumar** (Registration No.: **12518540** | Roll No.: **RK3P25ORB37**)  
 
+**Section:** K3P25OR  
 **Group Number:** G29  
 **Academic Year:** 2025–2026  
 
@@ -671,7 +672,7 @@ Associates a user account with educational cohort records.
 | `user_id` | VARCHAR(36) | FOREIGN KEY $\rightarrow$ `users.user_id` | Linked user account |
 | `cohort_id` | VARCHAR(36) | FOREIGN KEY $\rightarrow$ `cohorts.cohort_id` | Associated academic batch |
 | `department` | VARCHAR(100) | NOT NULL | Engineering department |
-| `roll_number` | VARCHAR(50) | NULLABLE | University roll number (e.g., RK3P25ORA20) |
+| `roll_number` | VARCHAR(50) | NULLABLE | University roll number (e.g., K3P25OR) |
 | `registration_number`| VARCHAR(50) | NULLABLE | University registration number (e.g., 12522547) |
 
 #### Table 3: `cohorts`
