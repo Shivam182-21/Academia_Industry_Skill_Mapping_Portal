@@ -4,8 +4,8 @@
 ---
 
 ### Team Information
-- **Shivam Chandel** (Roll No.: RK3P25ORA20 · Reg. No.: 12522547)
-- **Nayneet Kumar** (Roll No.: RK3P25ORB37 · Reg. No.: 12518540)
+- **Shivam Chandel** (Roll No.: K3P25OR · Reg. No.: 12522547)
+- **Navneet Kumar** (Roll No.: Navneet Kumar · Reg. No.: 12518540)
 - **Group:** G29
 - **Organization / Ministry:** Ministry of Ayush / Smart India Hackathon 2026
 
@@ -81,7 +81,7 @@ The login screen features **one-click evaluator access cards** for instant testi
 | Role | Name | Email | Password | Primary Capabilities in Portal |
 | :--- | :--- | :--- | :--- | :--- |
 | **Student (Team Lead)** | Shivam Chandel | `shivam.student@portal.edu` | `student123` | Target role selector, radial gauges, demonstrated vs missing skills, ranked recommendations, submit skill evidence. |
-| **Student (Team Member)** | Nayneet Kumar | `nayneet.student@portal.edu` | `student123` | Machine learning & Ayush health informatics student profile. |
+| **Student (Team Member)** | Navneet Kumar | `nayneet.student@portal.edu` | `student123` | Machine learning & Ayush health informatics student profile. |
 | **Faculty Member** | Dr. Rajesh Sharma | `faculty@portal.edu` | `faculty123` | Upload syllabus text, trigger NLP skill extraction, review/approve skills ($1.0$ vs $0.5$). |
 | **Placement Officer** | Prof. Sunita Verma | `placement@portal.edu` | `placement123` | Cohort readiness tiers, aggregate shortage heatmap, export placement reports (CSV). |
 | **Industry Partner** | TechCorp Recruiter | `partner@techcorp.com` | `partner123` | Upload job descriptions, adjust skill importance weights ($w_i$), configure required proficiency. |
