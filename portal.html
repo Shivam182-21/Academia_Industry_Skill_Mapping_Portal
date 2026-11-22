@@ -118,7 +118,7 @@
         Smart India Hackathon 2026 &middot; Problem Statement SIH26044 &middot; Group G29
       </p>
       <p class="text-[11px] text-slate-400 mt-1 font-medium">
-        Ministry of Ayush &middot; Shivam Chandel &amp; Nayneet Kumar
+        Ministry of Ayush &middot; Shivam Chandel &amp; Navneet Kumar
       </p>
     </div>
 
@@ -155,10 +155,10 @@
               <p class="text-[10px] text-slate-500 line-clamp-1">Roll: RK3P25ORA20 &bull; Reg: 12522547</p>
             </button>
 
-            <!-- Role 2: Nayneet Kumar -->
+            <!-- Role 2: Navneet Kumar -->
             <button onclick="quickLogin('student_nayneet')" class="text-left p-3 rounded-2xl border border-slate-200 hover:border-sky-500 hover:bg-sky-50/60 transition-all group flex flex-col justify-between bg-slate-50/60 hover:shadow-sm">
               <div class="flex items-center justify-between w-full mb-1">
-                <span class="font-bold text-xs text-slate-800 group-hover:text-sky-700">Nayneet Kumar</span>
+                <span class="font-bold text-xs text-slate-800 group-hover:text-sky-700">Navneet Kumar</span>
                 <span class="text-[9px] uppercase px-1.5 py-0.5 rounded bg-white border border-slate-200 font-mono text-slate-600 font-bold">STUDENT (AYUSH)</span>
               </div>
               <p class="text-[10px] text-slate-500 line-clamp-1">Roll: RK3P25ORB37 &bull; Reg: 12518540</p>
@@ -280,7 +280,7 @@
           <span class="text-slate-500">&bull;</span>
           <span class="text-slate-300 font-medium">Problem Statement: <strong class="text-white font-mono">SIH26044</strong> (Ministry of Ayush)</span>
           <span class="hidden lg:inline text-slate-500">&bull;</span>
-          <span class="hidden lg:inline text-slate-400">Team: <strong class="text-slate-200">Shivam Chandel</strong> &amp; <strong class="text-slate-200">Nayneet Kumar</strong> (LPU)</span>
+          <span class="hidden lg:inline text-slate-400">Team: <strong class="text-slate-200">Shivam Chandel</strong> &amp; <strong class="text-slate-200">Navneet Kumar</strong> (LPU)</span>
         </div>
 
         <!-- Live Engine Status & Role Switcher -->
@@ -294,7 +294,7 @@
             <span class="text-[11px] font-semibold text-slate-400">Active Role:</span>
             <select id="roleSelector" onchange="switchRole(this.value)" class="bg-transparent text-sky-400 font-bold text-xs outline-none cursor-pointer hover:text-sky-300 transition">
               <option value="student" class="bg-slate-900 text-slate-200">👨‍🎓 Student: Shivam Chandel (CSE)</option>
-              <option value="student_nayneet" class="bg-slate-900 text-slate-200">👨‍🎓 Student: Nayneet Kumar (Ayush Data)</option>
+              <option value="student_nayneet" class="bg-slate-900 text-slate-200">👨‍🎓 Student: Navneet Kumar (Ayush Data)</option>
               <option value="faculty" class="bg-slate-900 text-slate-200">👨‍🏫 Faculty: Dr. Rajesh Sharma</option>
               <option value="placement" class="bg-slate-900 text-slate-200">📊 Placement Officer: Prof. Sunita Verma</option>
               <option value="employer" class="bg-slate-900 text-slate-200">💼 Industry Partner: TechCorp Recruiter</option>
@@ -843,7 +843,7 @@
           <strong class="text-slate-800">Smart India Hackathon 2026</strong> &middot; Group G29 &middot; SIH26044
         </div>
         <div>
-          Engineered by: <strong class="text-slate-800 font-semibold">Shivam Chandel</strong> (12522547) &amp; <strong class="text-slate-800 font-semibold">Nayneet Kumar</strong> (12518540) &middot; Lovely Professional University
+          Engineered by: <strong class="text-slate-800 font-semibold">Shivam Chandel</strong> (12522547) &amp; <strong class="text-slate-800 font-semibold">Navneet Kumar</strong> (12518540) &middot; Lovely Professional University
         </div>
         <div class="font-mono text-slate-400 text-[11px]">
           Full-Stack Ready &bull; Zero Server Dependencies
@@ -1222,7 +1222,7 @@
         STATE.currentUser = { name: 'Shivam Chandel', email: 'chandels0708@gmail.com', role: 'student', roll: 'RK3P25ORA20', reg: '12522547', dept: 'Computer Science' };
         setActiveTab('student');
       } else if (roleKey === 'student_nayneet') {
-        STATE.currentUser = { name: 'Nayneet Kumar', email: 'nayneet.student@portal.edu', role: 'student', roll: 'RK3P25ORB37', reg: '12518540', dept: 'Ayush Informatics' };
+        STATE.currentUser = { name: 'Navneet Kumar', email: 'nayneet.student@portal.edu', role: 'student', roll: 'RK3P25ORB37', reg: '12518540', dept: 'Ayush Informatics' };
         setActiveTab('student');
       } else if (roleKey === 'faculty') {
         STATE.currentUser = { name: 'Dr. Rajesh Sharma', email: 'faculty@portal.edu', role: 'faculty', dept: 'School of CSE' };
@@ -1247,7 +1247,7 @@
     function renderStudentDashboard() {
       const selectedJobKey = document.getElementById('studentJobRoleSelect').value;
       const job = STATE.jobs.find(j => j.id === selectedJobKey) || STATE.jobs[0];
-      const isNay = STATE.currentUser.name.includes('Nayneet');
+      const isNay = STATE.currentUser.name.includes('Navneet');
       const studentSkills = isNay ? STATE.studentSkills.nayneet : STATE.studentSkills.shivam;
 
       document.getElementById('studentIdentifier').innerText = `Roll: ${STATE.currentUser.roll} • Reg: ${STATE.currentUser.reg} (${STATE.currentUser.dept})`;
@@ -1445,7 +1445,7 @@
         return;
       }
 
-      const isNay = STATE.currentUser.name.includes('Nayneet');
+      const isNay = STATE.currentUser.name.includes('Navneet');
       const targetList = isNay ? STATE.studentSkills.nayneet : STATE.studentSkills.shivam;
       targetList.push({ name, prof, src });
 
@@ -1544,11 +1544,11 @@
 
       const students = isCSE ? [
         { roll: 'RK3P25ORA20', name: 'Shivam Chandel', tier: 'Moderate Readiness', tierColor: 'text-amber-700 bg-amber-50 border-amber-200', cov: '62.5%', demo: 7, miss: 3 },
-        { roll: 'RK3P25ORB37', name: 'Nayneet Kumar', tier: 'Moderate Readiness', tierColor: 'text-amber-700 bg-amber-50 border-amber-200', cov: '58.0%', demo: 6, miss: 4 },
+        { roll: 'RK3P25ORB37', name: 'Navneet Kumar', tier: 'Moderate Readiness', tierColor: 'text-amber-700 bg-amber-50 border-amber-200', cov: '58.0%', demo: 6, miss: 4 },
         { roll: 'RK3P25ORC05', name: 'Pooja Verma', tier: 'Job Ready (>=75%)', tierColor: 'text-emerald-700 bg-emerald-50 border-emerald-200', cov: '82.0%', demo: 9, miss: 1 },
         { roll: 'RK3P25ORD19', name: 'Rahul Sen', tier: 'Needs Upskilling (<50%)', tierColor: 'text-rose-700 bg-rose-50 border-rose-200', cov: '42.0%', demo: 4, miss: 6 }
       ] : [
-        { roll: 'AY3P25ORA01', name: 'Nayneet Kumar', tier: 'Job Ready (>=75%)', tierColor: 'text-emerald-700 bg-emerald-50 border-emerald-200', cov: '78.5%', demo: 5, miss: 1 },
+        { roll: 'AY3P25ORA01', name: 'Navneet Kumar', tier: 'Job Ready (>=75%)', tierColor: 'text-emerald-700 bg-emerald-50 border-emerald-200', cov: '78.5%', demo: 5, miss: 1 },
         { roll: 'AY3P25ORB12', name: 'Aarav Sharma', tier: 'Moderate Readiness', tierColor: 'text-amber-700 bg-amber-50 border-amber-200', cov: '65.0%', demo: 4, miss: 2 }
       ];
 
@@ -1610,7 +1610,7 @@
       const csvContent = "data:text/csv;charset=utf-8,"
         + "Roll,Name,Tier,Weighted Coverage,Demonstrated,Missing Gaps\n"
         + "RK3P25ORA20,Shivam Chandel,Moderate Readiness,62.5%,7,3\n"
-        + "RK3P25ORB37,Nayneet Kumar,Moderate Readiness,58.0%,6,4\n"
+        + "RK3P25ORB37,Navneet Kumar,Moderate Readiness,58.0%,6,4\n"
         + "RK3P25ORC05,Pooja Verma,Job Ready (>=75%),82.0%,9,1\n"
         + "RK3P25ORD19,Rahul Sen,Needs Upskilling (<50%),42.0%,4,6\n";
 
@@ -1849,7 +1849,7 @@
     function renderAdminDashboard() {
       const users = [
         { name: 'Shivam Chandel', email: 'chandels0708@gmail.com', role: 'student', profile: 'Roll: RK3P25ORA20 (CSE)' },
-        { name: 'Nayneet Kumar', email: 'nayneet.student@portal.edu', role: 'student', profile: 'Roll: RK3P25ORB37 (CSE/Ayush)' },
+        { name: 'Navneet Kumar', email: 'nayneet.student@portal.edu', role: 'student', profile: 'Roll: RK3P25ORB37 (CSE/Ayush)' },
         { name: 'Dr. Rajesh Sharma', email: 'faculty@portal.edu', role: 'faculty', profile: 'Dept: Computer Science' },
         { name: 'Prof. Sunita Verma', email: 'placement@portal.edu', role: 'placement_officer', profile: 'Institutional Placement Cell' },
         { name: 'TechCorp Recruiter', email: 'partner@techcorp.com', role: 'employer', profile: 'TechCorp Solutions' },
